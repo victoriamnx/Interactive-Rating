@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 400;
+  font-family: "Overpass";
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 12%, 8%);
+}
+
+#back-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  background-color: hsl(216, 12%, 8%, 0.26);
+  width: 48px;
+  height: 48px;
+  font-family: "Overpass";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 18px;
+  width: 400px;
+  height: auto;
+  padding: 30px;
+  font-family: "Overpass";
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass";
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Overpass";
+  line-height: 22px;
+  color: hsl(216, 12%, 54%);
+}
+
+.rates {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 22px;
+  row-gap: 10px;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(216, 12%, 8%, 0.26);
+  width: 50px;
+  height: 50px;
+  font-family: "Overpass";
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding-top: 5px;
+  transition: 0.5s;
+}
+
+.rates div:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+  transition: 0.5s;
+}
+
+button {
+  background: hsl(25, 97%, 53%);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Overpass";
+  transition: 0.5s;
+}
+
+button a {
+  color: rgb(255, 255, 255) !important;
+}
+
+button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+button:hover a {
+  color: hsl(25, 97%, 53%) !important;
+  text-decoration: none;
+}
+
+.attribution {
+  padding-top: 10px;
+  font-size: 11px;
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  color: hsl(217, 12%, 63%);
+}
+
+.attribution a {
+  color: hsl(217, 12%, 63%);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: hsl(217, 12%, 63%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(25, 97%, 53%);
+
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
