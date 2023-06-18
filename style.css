@@ -51,7 +51,7 @@ body {
   width: 400px;
   height: auto;
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 30px;
   font-size: 18px;
   font-family: "Overpass";
   background-color: hsl(213, 19%, 15%);
@@ -142,7 +142,7 @@ p {
   height: 100%;
   font-size: 18px;
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 30px;
   font-family: "Overpass";
   background-color: hsl(213, 19%, 15%);
   position: absolute;
@@ -235,7 +235,7 @@ a:hover {
     width: 330px;
     height: 380px;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     font-size: 18px;
     font-family: "Overpass";
@@ -332,7 +332,7 @@ a:hover {
     width: 100%;
     height: 100%;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 30px;
     font-size: 18px;
     font-family: "Overpass";
     background-color: hsl(213, 19%, 15%);
