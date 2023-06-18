@@ -10,7 +10,7 @@
       sizes="32x32"
       href="components/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
@@ -25,30 +25,32 @@
         offering!
       </p>
       <div class="rates">
-        <div class="item" id="item1" onclick="changeColor('item1')">1</div>
-        <div class="item" id="item2" onclick="changeColor('item2')">2</div>
-        <div class="item" id="item3" onclick="changeColor('item3')">3</div>
-        <div class="item" id="item4" onclick="changeColor('item4')">4</div>
-        <div class="item" id="item5" onclick="changeColor('item5')">5</div>
+        <div class="btn" id="item1" onclick="changeColor('item1')">1</div>
+        <div class="btn" id="item2" onclick="changeColor('item2')">2</div>
+        <div class="btn" id="item3" onclick="changeColor('item3')">3</div>
+        <div class="btn" id="item4" onclick="changeColor('item4')">4</div>
+        <div class="btn" id="item5" onclick="changeColor('item5')">5</div>
       </div>
-      <a href="feedback.html"><button>S U B M I T</button></a>
+      <button id="btn-submit" class="btn-submit" type="submit">
+        S U B M I T
+      </button>
 
-      <script>
-        var selectedItemId = null;
-
-        function changeColor(itemId) {
-          var item = document.getElementById(itemId);
-
-          if (selectedItemId !== null) {
-            var selectedItem = document.getElementById(selectedItemId);
-            selectedItem.style.backgroundColor = ""; // Remove a cor de fundo do item selecionado anteriormente
-          }
-
-          item.style.backgroundColor = "hsl(25, 97%, 53%)";
-          item.style.color = "white"; // Atribui a cor de fundo ao item selecionado atualmente
-          selectedItemId = itemId; // Atualiza o ID do item selecionado atualmente
-        }
-      </script>
+      <div class="thanks-container hidden">
+        <div id="illustration-img">
+          <img src="components/images/illustration-thank-you.svg" />
+        </div>
+        <div id="what-rated">
+          <h2 class="rating-selected">
+            You selected <span id="result"></span> out of 5
+          </h2>
+        </div>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+      <script src="index.js"></script>
     </div>
 
     <div class="attribution">
